@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0b1f9e77e8c97e16e6a9851b51ed86ee {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0b1f9e77e8c97e16e6a9851b51ed86ee" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0b1f9e77e8c97e16e6a9851b51ed86ee = L.map(
+                "map_0b1f9e77e8c97e16e6a9851b51ed86ee",
+                {
+                    center: [-8.409518, 115.188919],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_110106844649c4cf786513cb96343572 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0b1f9e77e8c97e16e6a9851b51ed86ee);
+        
+    
+            var marker_d3754bb6f0ec5112de6515f7f31db51f = L.marker(
+                [-8.4353, 115.279],
+                {}
+            ).addTo(map_0b1f9e77e8c97e16e6a9851b51ed86ee);
+        
+    
+            var icon_5a6f61437f34d67f34e8ee1e7fe3ff14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_d3754bb6f0ec5112de6515f7f31db51f.setIcon(icon_5a6f61437f34d67f34e8ee1e7fe3ff14);
+        
+    
+        var popup_753a52370950c2db0e9c3787eed270c0 = L.popup({"maxWidth": 250});
+
+        
+            var html_5de9388423333aa27a05e9297456b972 = $(`<div id="html_5de9388423333aa27a05e9297456b972" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">             <strong>Tegalalang Rice Terraces</strong><br>             Jedny z nejznámějších rýžových teras v oblasti Ubudu. Nabízí krásné výhledy, procházky a možnost posedět u kokosového ořechu. Vhodné i pro děti.<br><br>             <img src="https://source.unsplash.com/400x300/?Tegalalang%20Rice%20Terraces,Bali" width="200px">         </div>         </div>`)[0];
+            popup_753a52370950c2db0e9c3787eed270c0.setContent(html_5de9388423333aa27a05e9297456b972);
+        
+
+        marker_d3754bb6f0ec5112de6515f7f31db51f.bindPopup(popup_753a52370950c2db0e9c3787eed270c0)
+        ;
+
+        
+    
+    
+            marker_d3754bb6f0ec5112de6515f7f31db51f.bindTooltip(
+                `<div>
+                     Tegalalang Rice Terraces
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5937992513b243bba8e00977878bffd4 = L.marker(
+                [-8.4158, 115.3188],
+                {}
+            ).addTo(map_0b1f9e77e8c97e16e6a9851b51ed86ee);
+        
+    
+            var icon_2ee4092c957f82bb2cb310b4193affff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_5937992513b243bba8e00977878bffd4.setIcon(icon_2ee4092c957f82bb2cb310b4193affff);
+        
+    
+        var popup_350b334da21d8aaab64fc06cb6f98313 = L.popup({"maxWidth": 250});
+
+        
+            var html_b77b3a47e1e2163040accd336f247726 = $(`<div id="html_b77b3a47e1e2163040accd336f247726" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">             <strong>Tirta Empul Temple</strong><br>             Posvátný hinduistický chrám známý svými očistnými prameny. Návštěvníci mohou sledovat nebo se i zúčastnit očistného rituálu.<br><br>             <img src="https://source.unsplash.com/400x300/?Tirta%20Empul%20Temple,Bali" width="200px">         </div>         </div>`)[0];
+            popup_350b334da21d8aaab64fc06cb6f98313.setContent(html_b77b3a47e1e2163040accd336f247726);
+        
+
+        marker_5937992513b243bba8e00977878bffd4.bindPopup(popup_350b334da21d8aaab64fc06cb6f98313)
+        ;
+
+        
+    
+    
+            marker_5937992513b243bba8e00977878bffd4.bindTooltip(
+                `<div>
+                     Tirta Empul Temple
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd24a5308693328d88b9dfb33f93a5d3 = L.marker(
+                [-8.8296, 115.0848],
+                {}
+            ).addTo(map_0b1f9e77e8c97e16e6a9851b51ed86ee);
+        
+    
+            var icon_683cc3154540bea23a3073465b245c7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_dd24a5308693328d88b9dfb33f93a5d3.setIcon(icon_683cc3154540bea23a3073465b245c7c);
+        
+    
+        var popup_f17dd8f7453a0973e8be2b1868682e7d = L.popup({"maxWidth": 250});
+
+        
+            var html_1cd91103a3f09f15cb368405d8e32f80 = $(`<div id="html_1cd91103a3f09f15cb368405d8e32f80" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">             <strong>Uluwatu Temple</strong><br>             Chrám postavený na útesu nad Indickým oceánem. Slavný pro dramatické západy slunce a tradiční Kecak tanec ve večerních hodinách.<br><br>             <img src="https://source.unsplash.com/400x300/?Uluwatu%20Temple,Bali" width="200px">         </div>         </div>`)[0];
+            popup_f17dd8f7453a0973e8be2b1868682e7d.setContent(html_1cd91103a3f09f15cb368405d8e32f80);
+        
+
+        marker_dd24a5308693328d88b9dfb33f93a5d3.bindPopup(popup_f17dd8f7453a0973e8be2b1868682e7d)
+        ;
+
+        
+    
+    
+            marker_dd24a5308693328d88b9dfb33f93a5d3.bindTooltip(
+                `<div>
+                     Uluwatu Temple
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a154c30795d1b90df3c3e52cd705922 = L.marker(
+                [-8.275, 115.1675],
+                {}
+            ).addTo(map_0b1f9e77e8c97e16e6a9851b51ed86ee);
+        
+    
+            var icon_5cbabdf30079d3d247fa7c1fd31b6e1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_8a154c30795d1b90df3c3e52cd705922.setIcon(icon_5cbabdf30079d3d247fa7c1fd31b6e1a);
+        
+    
+        var popup_fcaf8495023e8e2ff635f2a8417b6e9c = L.popup({"maxWidth": 250});
+
+        
+            var html_2f690685c5065234d82681b68b38ee65 = $(`<div id="html_2f690685c5065234d82681b68b38ee65" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">             <strong>Pura Ulun Danu Bratan</strong><br>             Malebný chrám na jezeře Bratan v horách severního Bali. Obklopený krásnými zahradami, ideální pro rodiny.<br><br>             <img src="https://source.unsplash.com/400x300/?Pura%20Ulun%20Danu%20Bratan,Bali" width="200px">         </div>         </div>`)[0];
+            popup_fcaf8495023e8e2ff635f2a8417b6e9c.setContent(html_2f690685c5065234d82681b68b38ee65);
+        
+
+        marker_8a154c30795d1b90df3c3e52cd705922.bindPopup(popup_fcaf8495023e8e2ff635f2a8417b6e9c)
+        ;
+
+        
+    
+    
+            marker_8a154c30795d1b90df3c3e52cd705922.bindTooltip(
+                `<div>
+                     Pura Ulun Danu Bratan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebf4863ba2bb11aae4602e7971a3d739 = L.marker(
+                [-8.538, 115.4231],
+                {}
+            ).addTo(map_0b1f9e77e8c97e16e6a9851b51ed86ee);
+        
+    
+            var icon_1689296532d4d7c5b9b880c879035745 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_ebf4863ba2bb11aae4602e7971a3d739.setIcon(icon_1689296532d4d7c5b9b880c879035745);
+        
+    
+        var popup_cc9e60a9d95f6ecca63f560fc39efdce = L.popup({"maxWidth": 250});
+
+        
+            var html_5d963ab24d2a56da366325ac836207e9 = $(`<div id="html_5d963ab24d2a56da366325ac836207e9" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">             <strong>Bali Safari & Marine Park</strong><br>             Moderní safari park s možností pozorování zvířat z bezpečí klimatizovaného vozidla. Obsahuje i dětskou zónu.<br><br>             <img src="https://source.unsplash.com/400x300/?Bali%20Safari%20%26%20Marine%20Park,Bali" width="200px">         </div>         </div>`)[0];
+            popup_cc9e60a9d95f6ecca63f560fc39efdce.setContent(html_5d963ab24d2a56da366325ac836207e9);
+        
+
+        marker_ebf4863ba2bb11aae4602e7971a3d739.bindPopup(popup_cc9e60a9d95f6ecca63f560fc39efdce)
+        ;
+
+        
+    
+    
+            marker_ebf4863ba2bb11aae4602e7971a3d739.bindTooltip(
+                `<div>
+                     Bali Safari & Marine Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46d1f3d547a5f4cb969ccaecd8d9bcce = L.marker(
+                [-8.3742, 115.6361],
+                {}
+            ).addTo(map_0b1f9e77e8c97e16e6a9851b51ed86ee);
+        
+    
+            var icon_f0187a931d9dc44b3aa06fb70d1a0f7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_46d1f3d547a5f4cb969ccaecd8d9bcce.setIcon(icon_f0187a931d9dc44b3aa06fb70d1a0f7e);
+        
+    
+        var popup_2abd334fa2a71e4340a1ec912e6ab61b = L.popup({"maxWidth": 250});
+
+        
+            var html_c823305398ca02249e4b05406bb4c268 = $(`<div id="html_c823305398ca02249e4b05406bb4c268" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">             <strong>Lempuyang Temple (Gates of Heaven)</strong><br>             Ikonická brána s výhledem na sopku Agung. Často fotografovaná, ale může být velmi rušno a náročné na přístup.<br><br>             <img src="https://source.unsplash.com/400x300/?Lempuyang%20Temple%20%28Gates%20of%20Heaven%29,Bali" width="200px">         </div>         </div>`)[0];
+            popup_2abd334fa2a71e4340a1ec912e6ab61b.setContent(html_c823305398ca02249e4b05406bb4c268);
+        
+
+        marker_46d1f3d547a5f4cb969ccaecd8d9bcce.bindPopup(popup_2abd334fa2a71e4340a1ec912e6ab61b)
+        ;
+
+        
+    
+    
+            marker_46d1f3d547a5f4cb969ccaecd8d9bcce.bindTooltip(
+                `<div>
+                     Lempuyang Temple (Gates of Heaven)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac71b2b885118bf48a6374d0b19a98ac = L.marker(
+                [-8.4142, 115.5875],
+                {}
+            ).addTo(map_0b1f9e77e8c97e16e6a9851b51ed86ee);
+        
+    
+            var icon_5972342af4e337e1a8b5278b435f41c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_ac71b2b885118bf48a6374d0b19a98ac.setIcon(icon_5972342af4e337e1a8b5278b435f41c1);
+        
+    
+        var popup_608f0e8b35eba900fa88b4482da208d1 = L.popup({"maxWidth": 250});
+
+        
+            var html_8c74cc3fcc9ca4bac1247e25956848c6 = $(`<div id="html_8c74cc3fcc9ca4bac1247e25956848c6" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">             <strong>Tirta Gangga</strong><br>             Vodní palác s fontánami, jezírky a sochami. Možnost krmení ryb a chůze po kamenech – ideální pro děti.<br><br>             <img src="https://source.unsplash.com/400x300/?Tirta%20Gangga,Bali" width="200px">         </div>         </div>`)[0];
+            popup_608f0e8b35eba900fa88b4482da208d1.setContent(html_8c74cc3fcc9ca4bac1247e25956848c6);
+        
+
+        marker_ac71b2b885118bf48a6374d0b19a98ac.bindPopup(popup_608f0e8b35eba900fa88b4482da208d1)
+        ;
+
+        
+    
+    
+            marker_ac71b2b885118bf48a6374d0b19a98ac.bindTooltip(
+                `<div>
+                     Tirta Gangga
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6724ca08569f4f9ba76da4782ce8418e = L.marker(
+                [-8.6216, 115.0866],
+                {}
+            ).addTo(map_0b1f9e77e8c97e16e6a9851b51ed86ee);
+        
+    
+            var icon_f2b5d4557cac5a333a1854e3c7473a01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_6724ca08569f4f9ba76da4782ce8418e.setIcon(icon_f2b5d4557cac5a333a1854e3c7473a01);
+        
+    
+        var popup_45ea3ae6ee59be593153e68b468bb9b4 = L.popup({"maxWidth": 250});
+
+        
+            var html_fcface6b7b4121c6df1adf742f26e1c8 = $(`<div id="html_fcface6b7b4121c6df1adf742f26e1c8" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">             <strong>Tanah Lot Temple</strong><br>             Chrám postavený na skalním výběžku v moři. Nejkrásnější při západu slunce. Přístup závislý na přílivu.<br><br>             <img src="https://source.unsplash.com/400x300/?Tanah%20Lot%20Temple,Bali" width="200px">         </div>         </div>`)[0];
+            popup_45ea3ae6ee59be593153e68b468bb9b4.setContent(html_fcface6b7b4121c6df1adf742f26e1c8);
+        
+
+        marker_6724ca08569f4f9ba76da4782ce8418e.bindPopup(popup_45ea3ae6ee59be593153e68b468bb9b4)
+        ;
+
+        
+    
+    
+            marker_6724ca08569f4f9ba76da4782ce8418e.bindTooltip(
+                `<div>
+                     Tanah Lot Temple
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd265a1f424257bb761f6cc6d1f7534d = L.marker(
+                [-8.5063, 115.2566],
+                {}
+            ).addTo(map_0b1f9e77e8c97e16e6a9851b51ed86ee);
+        
+    
+            var icon_9b4d2818a6fcab7ac6bba8e0ec99d88f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_dd265a1f424257bb761f6cc6d1f7534d.setIcon(icon_9b4d2818a6fcab7ac6bba8e0ec99d88f);
+        
+    
+        var popup_66a697019f37097b5a9811a14eae5dfa = L.popup({"maxWidth": 250});
+
+        
+            var html_4f7805fefbc1a641105d6ab0a47afaf6 = $(`<div id="html_4f7805fefbc1a641105d6ab0a47afaf6" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">             <strong>Campuhan Ridge Walk</strong><br>             Pěší trasa přes kopec poblíž Ubudu, oblíbená pro klid a výhledy. Ideální pro lehkou rodinnou procházku.<br><br>             <img src="https://source.unsplash.com/400x300/?Campuhan%20Ridge%20Walk,Bali" width="200px">         </div>         </div>`)[0];
+            popup_66a697019f37097b5a9811a14eae5dfa.setContent(html_4f7805fefbc1a641105d6ab0a47afaf6);
+        
+
+        marker_dd265a1f424257bb761f6cc6d1f7534d.bindPopup(popup_66a697019f37097b5a9811a14eae5dfa)
+        ;
+
+        
+    
+    
+            marker_dd265a1f424257bb761f6cc6d1f7534d.bindTooltip(
+                `<div>
+                     Campuhan Ridge Walk
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b403be65a35634ba3ae2a1dfecd259a = L.marker(
+                [-8.6935, 115.2604],
+                {}
+            ).addTo(map_0b1f9e77e8c97e16e6a9851b51ed86ee);
+        
+    
+            var icon_0ac867069d6dfd498b2116b6d6e3efc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_2b403be65a35634ba3ae2a1dfecd259a.setIcon(icon_0ac867069d6dfd498b2116b6d6e3efc9);
+        
+    
+        var popup_0293510f0bd4a38dacc6cbf535937eb1 = L.popup({"maxWidth": 250});
+
+        
+            var html_e4c90df7fe481f8e5d38f3cbca77dc14 = $(`<div id="html_e4c90df7fe481f8e5d38f3cbca77dc14" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">             <strong>Sanur Beach</strong><br>             Pláž s klidným mořem, mělkým vstupem a možností procházek po promenádě. Vhodná pro malé děti.<br><br>             <img src="https://source.unsplash.com/400x300/?Sanur%20Beach,Bali" width="200px">         </div>         </div>`)[0];
+            popup_0293510f0bd4a38dacc6cbf535937eb1.setContent(html_e4c90df7fe481f8e5d38f3cbca77dc14);
+        
+
+        marker_2b403be65a35634ba3ae2a1dfecd259a.bindPopup(popup_0293510f0bd4a38dacc6cbf535937eb1)
+        ;
+
+        
+    
+    
+            marker_2b403be65a35634ba3ae2a1dfecd259a.bindTooltip(
+                `<div>
+                     Sanur Beach
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e5bc4952e4e5231f01c0cf6cc0d7d4c0 = L.marker(
+                [-8.748, 115.2213],
+                {}
+            ).addTo(map_0b1f9e77e8c97e16e6a9851b51ed86ee);
+        
+    
+            var icon_574562b27e3a548ee8d18876cc053db3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_e5bc4952e4e5231f01c0cf6cc0d7d4c0.setIcon(icon_574562b27e3a548ee8d18876cc053db3);
+        
+    
+        var popup_cc20b49a4d5ab3650f82ec769feb3af4 = L.popup({"maxWidth": 250});
+
+        
+            var html_35fd5e341aa93689d6341c12826e2425 = $(`<div id="html_35fd5e341aa93689d6341c12826e2425" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">             <strong>Turtle Conservation and Education Center</strong><br>             Záchranné centrum pro želvy. Děti se mohou dozvědět o záchraně zvířat a uvidí želví mláďata.<br><br>             <img src="https://source.unsplash.com/400x300/?Turtle%20Conservation%20and%20Education%20Center,Bali" width="200px">         </div>         </div>`)[0];
+            popup_cc20b49a4d5ab3650f82ec769feb3af4.setContent(html_35fd5e341aa93689d6341c12826e2425);
+        
+
+        marker_e5bc4952e4e5231f01c0cf6cc0d7d4c0.bindPopup(popup_cc20b49a4d5ab3650f82ec769feb3af4)
+        ;
+
+        
+    
+    
+            marker_e5bc4952e4e5231f01c0cf6cc0d7d4c0.bindTooltip(
+                `<div>
+                     Turtle Conservation and Education Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a96713a530ff4e7cd21ccec294f5d00 = L.marker(
+                [-8.5707, 115.2791],
+                {}
+            ).addTo(map_0b1f9e77e8c97e16e6a9851b51ed86ee);
+        
+    
+            var icon_e520c9512cb7df14af1244defbc27e9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_1a96713a530ff4e7cd21ccec294f5d00.setIcon(icon_e520c9512cb7df14af1244defbc27e9d);
+        
+    
+        var popup_cdb6ac949a80f5cfdd26af10f534bdc7 = L.popup({"maxWidth": 250});
+
+        
+            var html_0dca2112277134a81c3757422a738d04 = $(`<div id="html_0dca2112277134a81c3757422a738d04" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">             <strong>Bali Bird Park</strong><br>             Rozsáhlý ptačí park s tropickými druhy z celé Indonésie. Možnost krmení papoušků, ideální pro rodiny.<br><br>             <img src="https://source.unsplash.com/400x300/?Bali%20Bird%20Park,Bali" width="200px">         </div>         </div>`)[0];
+            popup_cdb6ac949a80f5cfdd26af10f534bdc7.setContent(html_0dca2112277134a81c3757422a738d04);
+        
+
+        marker_1a96713a530ff4e7cd21ccec294f5d00.bindPopup(popup_cdb6ac949a80f5cfdd26af10f534bdc7)
+        ;
+
+        
+    
+    
+            marker_1a96713a530ff4e7cd21ccec294f5d00.bindTooltip(
+                `<div>
+                     Bali Bird Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf8f0c2b1ede7fde4b9b95ded5ef42f9 = L.marker(
+                [-8.4581, 115.1093],
+                {}
+            ).addTo(map_0b1f9e77e8c97e16e6a9851b51ed86ee);
+        
+    
+            var icon_3b884f1121f5b75701bc6e8c5ffa611a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_bf8f0c2b1ede7fde4b9b95ded5ef42f9.setIcon(icon_3b884f1121f5b75701bc6e8c5ffa611a);
+        
+    
+        var popup_625b07f46e31cc87c34e719e87b2897d = L.popup({"maxWidth": 250});
+
+        
+            var html_95e8a0b15939c101b3a3ed39e1b8c212 = $(`<div id="html_95e8a0b15939c101b3a3ed39e1b8c212" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">             <strong>Bali Butterfly Park</strong><br>             Kompaktní zahrada plná barevných motýlů a kukel. Klidné prostředí pro vzdělávací návštěvu.<br><br>             <img src="https://source.unsplash.com/400x300/?Bali%20Butterfly%20Park,Bali" width="200px">         </div>         </div>`)[0];
+            popup_625b07f46e31cc87c34e719e87b2897d.setContent(html_95e8a0b15939c101b3a3ed39e1b8c212);
+        
+
+        marker_bf8f0c2b1ede7fde4b9b95ded5ef42f9.bindPopup(popup_625b07f46e31cc87c34e719e87b2897d)
+        ;
+
+        
+    
+    
+            marker_bf8f0c2b1ede7fde4b9b95ded5ef42f9.bindTooltip(
+                `<div>
+                     Bali Butterfly Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
